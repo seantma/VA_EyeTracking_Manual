@@ -35,7 +35,7 @@ Description: The ViewPoint EyeTracker provides a complete eye movement evaluatio
   * _**EyeSpace**_
   * _**GazeSpace**_
 
-   ![alt text](figure_VA_Manual/Default_Highlight_EyeGaze.png)
+   ![alt text](figure_VA_manual/Default_Highlight_EyeGaze.png)
 
 4. Calibrating eye space with stimulus space
 ------------
@@ -43,21 +43,21 @@ In order to establish a relationship between what the eye is seeing (**eye space
 
 1. After Nita has adjusted the clarity of the goggle for the subject (close left eye, see with right eye test), switch the **screen switch box** knob (shown below) to **"D"** position. This will project the **ViewPoint** computer screen onto the goggles. 
 
-   ![alt text](figure_VA_Manual/SwitchBox.png)
+   ![alt text](figure_VA_manual/SwitchBox.png)
 
 2. Ask Nita to help on minor adjustment so that the subject's eye is fully center in the **EyeCamera** window. Make sure again the subject sees the whole screen clearly.
 
 3. Drag out the **EyeSpace** window in ViewPoint, choose the number of calibration points you would like to use. Using 12 or 16 points is optimal. 
   * If you would like to change the color scheme of the calibration procedure, click **Advanced** at the bottom of the EyeSpace window. For our purposes, we use a black background and red calibration points.
   
-   ![alt text](figure_VA_Manual/ViewPointCalibrationSettings.png)
+   ![alt text](figure_VA_manual/ViewPointCalibrationSettings.png)
   
 4. Instruct the subject to regarding the calibrating. Click **Auto-Calibrate** to start.
   * Shown below is a successful calibration. In the **EyeSpace** window the green dots connected by yellow lines are the calibrated result mapped onto the 16 point calibration grid. The result is relatively rectilinear with well separated configuration of dots.
   
   * You can recalibrate a **specific point** by clicking on the **"point of interest"**(highlighted white dot) and click **"Re-present"** button if the specific point is **NOT** aligned in the grid shape formation.
   
-   ![alt text](figure_VA_Manual/ViewPointSuccessful16PointCalibration.png)
+   ![alt text](figure_VA_manual/ViewPointSuccessful16PointCalibration.png)
 
   * During the scan, the position of the subject's head might slip from the initial position. This will cause a bias shift for the eye-tracking software. It is necessary to perform a __Slip Correction__ at this point. A slip correction takes a sample of the current position of one or more points and repositions the calibrated space accordingly.
 
@@ -87,7 +87,7 @@ vpxver=vpxs_SendCommandString("dataFile_InsertMarker O")
 vpxver=vpxs_SendCommandString("dataFile_InsertMarker X")
 ```
 
-  * ![alt text](figure_VA_Manual/Eprimesynccode.png)
+  * ![alt text](figure_VA_manual/Eprimesynccode.png)
 
 
 6. Collecting eye data in ViewPoint with E-prime synchronization
@@ -98,10 +98,10 @@ This saves the data stream into a file in ViewPoint and initiates the communicat
 
 2. On the E-prime computer, click the icon **"Shortcut to ViewPointClient"** located in the upper right corner of the desktop. The following window will be displayed:
 
-   ![alt text](figure_VA_Manual/clientexe.png)
+   ![alt text](figure_VA_manual/clientexe.png)
    
 3. Make sure the IP address is **192.168.1.151** (this should not change, but if so, verify the **"Status Window"** in **ViewPoint** shown below to confirm the ip address matches). Click the **"Attach Server"** button to start synchronization between the two computers and remember to click the **"Detach"** button after data collection is done. 
 
   * If the __Data__ field is 0, or remains constant, check to see that Viewpoint isn't in Freeze mode by clicking the menu: __Interface > Send Data > Streaming Data__
 
-   ![alt text](figure_VA_Manual/Default_Highlight_IP.png)
+   ![alt text](figure_VA_manual/Default_Highlight_IP.png)
